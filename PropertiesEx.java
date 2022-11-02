@@ -12,7 +12,7 @@ public class PropertiesEx {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input path to properties file : ");
         String s = scanner.nextLine();
-
+        scanner.close();
         // s=/Users/munhalmammadov/IdeaProjects/ProjectTelRan1/src/com/telran/project/inputdata/one.properties
 
         Properties properties = new Properties();
@@ -24,6 +24,5 @@ public class PropertiesEx {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }
